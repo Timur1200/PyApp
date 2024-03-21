@@ -21,7 +21,6 @@
   <ItemGroup>
     <Compile Include="confighelp.py" />
     <Compile Include="configmain.py" />
-    <Compile Include="helpwind.py" />
     <Compile Include="main.py" />
   </ItemGroup>
   <ItemGroup>

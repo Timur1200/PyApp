@@ -8,6 +8,11 @@ app = QtWidgets.QApplication(sys.argv)
 Dialog = QtWidgets.QDialog()
 ui = Ui_Dialog()
 ui.setupUi(Dialog)
+
+govnoUi = Ui_Help_window()
+
+
+
 Dialog.show()
 
 
@@ -15,12 +20,15 @@ Dialog.show()
 def openHelpWindow():
     global Help_window
     Help_window = QtWidgets.QDialog()
-    ui = Ui_Help_window()
-    ui.setupUi(Help_window)
+    #ui = Ui_Help_window()
+    govnoUi.setupUi(Help_window)
     Help_window.show()
+    #govnoUi.pushButton_5.clicked.connect(on_button_click)
     #Dialog.close()
 
 
+    
+    
 
 ui.pushButton.clicked.connect(openHelpWindow)
 
